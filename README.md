@@ -35,4 +35,4 @@ To use the weather dashboard, simply enter the name of the city you want to sear
 - OpenWeatherMap API
 
 
-![Alt Text](/Weather-API/Weather-API/website.png)
+![Daily Planner](website.png)
