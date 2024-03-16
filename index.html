@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <main>
+    <aside>
+      <div class="card">
+        <h2>Weather Dashboard</h2>
+        <hr>
+        <p>Want to know the current weather and 5-day forecast for a city? 
+           Type the name of the city below and get the weather information.
+        </p>
+        <label id="city">City Name</label>
+
+        <input
+          type="text"
+          placeholder="type city name here"
+          minlength="3"
+          id="weatherSearchInput"
+        /> <br><br>
+        <button id="weatherSearchBtn">Submit</button>
+      </div>
+    </aside>
+    <!-- Displayed Weather Information goes below -->
+    <div id="weatherContainer" class="card">
+      <div class="card-img img4"></div>
+      <h2>Current Weather and 5-Day Forecast</h2>
+      <hr>
+      <p>Check out the current weather and 5-day forecast for your city!!!</p>
+      <br><br>
+      <div id="currentWeather">
+        <h3 id="cityName"></h3>
+        <img id="weatherIcon" alt="Weather icon">
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+      </div>
+    </div>
+
+    <div id="uvIndex"></div>
+      <div id="forecastContainer">
+        <div class="forecastDay">
+          <p class="forecastDate"></p>
+          <p class="forecastTemp"></p>
+          <p class="forecastHumidity"></p>
+        </div>
+        <div class="forecastDay">
+          <p class="forecastDate"></p>
+          <p class="forecastTemp"></p>
+          <p class="forecastHumidity"></p>
+        </div>
+        <div class="forecastDay">
+          <p class="forecastDate"></p>
+          <p class="forecastTemp"></p>
+          <p class="forecastHumidity"></p>
+        </div>
+        <div class="forecastDay">
+          <p class="forecastDate"></p>
+          <p class="forecastTemp"></p>
+          <p class="forecastHumidity"></p>
+        </div>
+        <div class="forecastDay">
+          <p class="forecastDate"></p>
+          <p class="forecastTemp"></p>
+          <p class="forecastHumidity"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
